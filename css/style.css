@@ -20,20 +20,30 @@ body {
   z-index: 20;
 }
 
+.navbar-brand {
+  padding:0em 11em 3em 0em;
+  margin:0em 0em 3em 0em;
+
+}
+
 .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
     color: black;
 
 }
+
 
 .navbar {
   margin: -1em 0em 2em 0em;
 }
 
 .navbar-nav > li{
-  padding:1em 1em 4em 5em;
-  margin: -1em 0em 2em 0em;
+  padding:1em 0em 4em 0em;
+  margin: -1em 1em 2em 0em;
   text-align: center;
   height: 7em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+
 
 }
 
@@ -46,10 +56,7 @@ body {
 
 }
 
-hr {
-  color: black;
-  width: 100%;
-}
+
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
@@ -80,7 +87,7 @@ hr {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 670px;
+  height: 730px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -88,7 +95,7 @@ hr {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 670px;
+  height: 770px;
 }
 
 /* CONTAINER Inverted triangle */
@@ -133,15 +140,12 @@ hr {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
 }
 .marketing h2 {
   font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 
@@ -166,11 +170,11 @@ hr {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
@@ -182,12 +186,6 @@ hr {
     border-radius: 4px;
   }
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
 
   .featurette-heading {
     font-size: 50px;
