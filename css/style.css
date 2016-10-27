@@ -240,6 +240,51 @@ body {
     height: 400px;
 }
 /* End carousel */
+
+#main_contact_form >img {
+    width: 101.5%;
+    height: 80%;
+    position: absolute;
+    z-index:-100;
+}
+
+#contact_form {
+    width: 500px;
+    height: 350px;
+    margin: 240px 100px 3px 450px;
+    padding: 0px 100px 3px 3px;
+    background-color: white;
+    position: absolute;
+     opacity: 0.5;
+    filter: alpha(opacity=50);
+    border-radius: 5px;
+}
+.col-xs-4 {
+    position: absolute;
+    z-index:100;
+    margin: 230px 100px 1px 450px;
+    padding: 0px 100px 3px 3px;
+
+
+}
+.col-xs-4 > h3{
+    text-align: center;
+    font-weight: 900;
+    color: black;
+
+}
+
+.form-group {
+    font-weight: 900;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
