@@ -18,6 +18,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+
 }
 
 .navbar-brand {
@@ -34,6 +35,8 @@ body {
 
 .navbar {
   margin: -1em 0em 2em 0em;
+  padding:0em 0em 0em 0em;
+
 }
 
 .navbar-nav > li{
@@ -43,16 +46,15 @@ body {
   height: 7em;
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
-
-
-}
+  }
 
 .list-inline > li{
   padding:1em 4em 0em 5em;
-  margin:-1em 0em -2em 0em;
-  border-left:1px solid grey;
+  margin: 0px -4px 0px 0px;
+  border-left:1px ;
   text-align: center;
-  height: 4em;
+  height: 3em;
+  border: .4px solid #808080;
 
 }
 
@@ -95,45 +97,31 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 730px;
+  height: 760px;
+
 }
 
 /* CONTAINER Inverted triangle */
 
-.hero {
-    position: relative;
-    overflow: hidden;
-}
-.hero img {
-    display: block;
-    width: 960px;
-    height: auto;
-}
 
+#myCarousel:after {
+  position: absolute;
+  width:50px;
+  height:50px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  top:100%;
+  left:50%;
+  margin:-25px;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: 34px;
+
+
+}
 /*-------------------------*/
-.bs-callout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
-}
-.bs-callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-.bs-callout p:last-child {
-    margin-bottom: 0;
-}
-.bs-callout code {
-    border-radius: 3px;
-}
-.bs-callout+.bs-callout {
-    margin-top: -5px;
-}
-.bs-callout-default {
-    border-left-color: #777;
-}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -146,6 +134,11 @@ body {
 }
 .marketing h2 {
   font-weight: normal;
+}
+
+.img-rectangle {
+  position: relative;
+    z-index:1;
 }
 
 
@@ -243,7 +236,7 @@ body {
 
 #main_contact_form >img {
     width: 101.5%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     z-index:-100;
 }
