@@ -153,17 +153,89 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px; /* Space out the Bootstrap <hr> more */
 }
+
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+  line-height: 2;
+  letter-spacing: 4px;
+  font-style: bold;
+  font-family:Century Gothic, sans-serif;
+  text-align: center;
+}
+
+.col-md-7 p.lead {
+  font-size: 20px;
 }
 
 
+.col-lg-12 p.lead {
+  text-align: center;
+}
+
+/* THUMB Nail Slider*/
+/* carousel */
+.media-carousel
+{
+  margin-bottom: 0;
+  padding: 0 40px 0px 40px;
+  margin-top: 20px;
+
+}
+/* Previous button  */
+.media-carousel .carousel-control.left
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 350px;
+  height: 190px
+}
+
+.carousel .item {
+    height: 120px;
+    background-color: white;
+}
+/* End carousel */
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
