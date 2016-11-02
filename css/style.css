@@ -17,36 +17,42 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 10;
+}
+
+.container .navbar-static-top {
+  padding:1em 1em 0em 0em;
+  margin:0em 1em 0em -2em;
+  height: 5em;
+  width:92.5em;
+  background-color: grey;
+  opacity: 0.2;
+  /*filter: alpha(opacity=50);*/
+  position: relative;
+  z-index: -1;
+}
+
+.container .navbar-static-top a {
 
 }
 
 .navbar-brand {
-  padding:0em 11em 3em 0em;
-  margin:0em 0em 3em 0em;
-
+  padding:0em 10em 0em 0em;
+  margin:0em 0em 0em 0em;
 }
 
 .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
-    color: black;
+    color: #333;
 
 }
 
-
+/* top contact navbar*/
 .navbar {
-  margin: -1em 0em 2em 0em;
+  margin: -2em 0em 0em 0em;
   padding:0em 0em 0em 0em;
 
-}
 
-.navbar-nav > li{
-  padding:1em 0em 4em 0em;
-  margin: -1em 1em 2em 0em;
-  text-align: center;
-  height: 7em;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  }
+}
 
 .list-inline > li{
   padding:12px 91.5px 2px 40px;
@@ -56,8 +62,28 @@ body {
   height: 3em;
   border: .3px solid #808080;
 
+
 }
 
+ a {
+  color:black;
+}
+/*END top contact navbar*/
+
+/* main navbar */
+.navbar-nav > li{
+  padding:0em 0em 0em 0em;
+  margin: -.5em 2em 2em 0em;
+  text-align: center;
+  height: 7em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  }
+
+.nav {
+  padding:0em 0em 0em 6em;
+  margin: 0em 0em 0em 2em;
+}
 
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -65,63 +91,6 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 670px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item1 {
-  height: 730px;
-  background-color: white;
-}
-.carousel-inner > .item1 > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 760px;
-
-}
-
-/* CONTAINER Inverted triangle */
-
-
-#myCarousel:after {
-  position: absolute;
-  width:50px;
-  height:50px;
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  top:100%;
-  left:50%;
-  margin:-25px;
-  content: '';
-  transform: rotate(45deg);
-  margin-top: 34px;
-
-
-}
-/*-------------------------*/
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -160,7 +129,7 @@ body {
 }
 
 .col-md-7 p.lead {
-  font-size: 20px;
+  font-size: 2em;
 }
 
 
@@ -172,86 +141,55 @@ body {
 /* carousel */
 .media-carousel
 {
-  margin-bottom: 0;
-  padding: 0 40px 0px 40px;
-  margin-top: 20px;
+  margin:0em 0em 0em 0em;
+  padding: 0em 4em 0em 4em;
 
-}
-/* Previous button  */
-.media-carousel .carousel-control.left
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Next button  */
-.media-carousel .carousel-control.right
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 350px;
-  height: 190px
-}
 
-.carousel .item {
-    height: 20px;
-    background-color: white;
 }
 
 .col-md-12 .carousel{
-    height: 400px;
+    height: 350px;
 }
+
+/* carousel */
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      max-width: 100%;
+      max-height:100%;
+
+  }
+
+  .container .carousel {
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
+    max-height:100%;
+    max-width:100%;
+
+}
+
 /* End carousel */
 
+/* contact form */
 #main_contact_form >img {
     width: 101.5%;
-    height: 100%;
+    /*height: 100%;*/
     position: absolute;
     z-index:-100;
 }
 
 #contact_form {
     width: 500px;
-    height: 350px;
+    height: 355px;
     margin: 240px 100px 3px 450px;
     padding: 0px 100px 3px 3px;
     background-color: white;
     position: absolute;
-     opacity: 0.5;
+    opacity: 0.5;
     filter: alpha(opacity=50);
     border-radius: 5px;
 }
+
+/*END contact form */
 .col-xs-4 {
     position: absolute;
     z-index:100;
@@ -272,10 +210,6 @@ body {
     color: black;
     font-size: 18px;
 }
-
-
-
-
 
 
 /* RESPONSIVE CSS
@@ -299,7 +233,6 @@ body {
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
-
 
   .featurette-heading {
     font-size: 50px;
