@@ -9,7 +9,7 @@ body {
 
 .container{
     width: 104.5%;
-    margin: -3em 1em 0em 0em;
+    margin: -7em 1em 0em 0em;
     padding: 0em 2em 0em 0em;
 }
 /* CUSTOMIZE THE NAVBAR
@@ -25,32 +25,33 @@ body {
 }
 
 .container .navbar-static-top {
-  padding: 5em 0em 0em 0em;
-  margin: 0em 0em 0em -2em;
-  height: 6em;
-  width:92.5em;
-  background-color: grey;
-  /*opacity: 0.2;*/
-  /*filter: alpha(opacity=50);*/
-  position: relative;
-  z-index: 100;
+  padding: 0em 0em 0em 0em;
+  margin: 0em 0em 0em 2em;
 }
 
-/*.navbar-nav > li {
-  color: black;
-}*/
+#navbar-tint {
+  height: 5.5em;
+  width:92.5em;
+  background-color: grey;
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+  position: relative;
+  z-index: 0;
+  margin: 0em 0em 0em -2em;
+  padding: 0em 0em 0em 7em;
+}
+
 
 
 .navbar-brand > img{
   padding:0em 8em 0em 0em;
-  margin:-.3em 0em 1em 0em;
+  margin:-4.4em 0em 1em 0em;
   position: relative;
   z-index: 1000;
 }
 
 .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
   color: #333;
-
 }
 
 /* top contact navbar*/
@@ -89,7 +90,7 @@ body {
 
 .nav {
   padding:0em 0em 0em 0em;
-  margin: 0em 0em 0em 2em;
+  margin: -4em 0em 0em 2em;
 }
 
 
