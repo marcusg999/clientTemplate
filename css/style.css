@@ -138,6 +138,7 @@ body {
 
 .featurette-heading .lead{
   text-align: center;
+  padding-bottom: 8em;
 }
 
 .featurette-image {
@@ -179,13 +180,14 @@ body {
     padding: 0em 2em 0em 0em;
   }
 
-   .carousel .container {
+    .container h2 {
     width: 100%;
-
+    padding: 7em 2em 0em 0em;
 }
 
 .carousel-control {
     width:5%;
+
 }
 
 .carousel-control.right {
@@ -197,7 +199,9 @@ h2 {
   font-size: 30px;
   letter-spacing: 9px;
   padding: -3em 0em 3em 0em;
+  margin:0em 0em 0em 3em;
   margin-bottom: 25px;
+
 }
 
 .fa-angle-left, .fa-angle-right{
