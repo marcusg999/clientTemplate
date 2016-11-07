@@ -142,6 +142,7 @@ body {
 
 .featurette-image {
   margin: 10em 0em 0em 10em;
+
 }
 
 .col-md-7 p.lead {
@@ -167,8 +168,6 @@ body {
 
 .col-md-12 .carousel{
     height: 25em;
-
-
 }
 
 /* carousel */
@@ -201,6 +200,14 @@ h2 {
   margin-bottom: 25px;
 }
 
+.fa-angle-left, .fa-angle-right{
+    padding:11em 0em 0em 0em;
+}
+
+#fa-angle-left, #fa-angle-right{
+    padding:0em 0em 0em 0em;
+}
+
 /* End carousel */
 
 .map img {
@@ -226,6 +233,15 @@ h2 {
     border-radius: 5px;
 }
 
+/* Logo Img*/
+.contact_img img {
+    position: absolute;
+    z-index:100;
+    padding: 0px 0px 0px 0px;
+    margin: 180px 0px 1px 560px;
+    height:8%;
+    width:23%;
+}
 /*END contact form */
 .col-xs-4 {
     position: absolute;

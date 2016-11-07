@@ -28,6 +28,10 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> -->
+    <script src="https://use.fontawesome.com/88db4a8d35.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
     <link rel="shortcut icon" href="">
   </head>
 
@@ -122,11 +126,11 @@
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <i class="fa fa-angle-left" style="font-size:40px;color:black"></i>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <i class="fa fa-angle-right" style="font-size:40px;color:black"></i>
       <span class="sr-only">Next</span>
     </a>
   </div>
@@ -171,9 +175,10 @@
                   <p class="lead">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                     consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                  </p>
+                  <br>
+                  <br>
 
-                  <p class="lead">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                   "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                    uis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
@@ -250,8 +255,11 @@
                 </div>
               </div>
             </div>
-            <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-            <a data-slide="next" href="#media" class="right carousel-control">›</a>
+            <a data-slide="prev" href="#media" class="left carousel-control" ></a>
+            <i id="fa fa-angle-left" style="font-size:40px;color:black"></i>
+
+            <a data-slide="next" href="#media" class="right carousel-control" ></a>
+            <i id="fa fa-angle-right" style="font-size:40px;color:black"></i>
           </div>
         </div>
       </div>
@@ -263,6 +271,9 @@
         </div>
 
           <div id="main_contact_form" >
+            <div class="contact_img" >
+                <img class="img" src="./images/CoastLine_LOGO.png"></a>
+            </div>
               <img src="./images/shutterstock_94165819.jpg" alt="">
                 <div id="contact_form" >
                 </div>
