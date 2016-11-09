@@ -3,17 +3,39 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+  /*padding-bottom: 40px;
+  color: #5a5a5a;*/
 }
 
 .container{
     width: 104.5%;
-    margin: -7em 1em 0em 0em;
+    margin: -.7em 1em 0em 0em;
     padding: 0em 2em 0em 0em;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+/* main navbar */
+.navbar-nav > li{
+  padding:0em 0em 0em 0em;
+  margin: -.5em 2em 2em 0em;
+  text-align: center;
+  height: 7em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  color: black;
+  }
+
+.nav {
+  padding:0em 0em 0em 0em;
+  margin: 2em 0em 0em 2em;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -22,45 +44,87 @@ body {
   right: 0;
   left: 0;
   z-index: 10;
+  margin-top: 20px;
+}
+
+.navbar-right {
+    padding: 1em 3em 0em 0em;
+}
+
+.navbar-wrapper .navbar {
+  margin-right: 30px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+.navbar-wrapper .navbar .container {
+  width: 100%;
+
 }
 
 .container .navbar-static-top {
   padding: 0em 0em 0em 0em;
   margin: 0em 0em 0em 2em;
 }
-
-#navbar-tint {
+.navbar-inverse {
   height: 5.5em;
-  width:92.5em;
+  width:105%;
+  /*background-color: grey;*/
+  opacity: 0.4;
+  filter: alpha(opacity=50);
+  position: relative;
+  z-index: 1000;
+  margin: 2em 0em 0em -2em;
+  padding: 0em 0em 0em 0em;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: rgba(0,0,0,.5);;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.icon-bar{
+    color: white;
+
+}
+/*#navbar-tint {
+  height: 5.5em;
+  width:100%;
   background-color: grey;
   opacity: 0.2;
   filter: alpha(opacity=50);
   position: relative;
   z-index: 0;
-  margin: 0em 0em 0em -2em;
-  padding: 0em 0em 0em 7em;
-}
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}*/
 
 
 
 .navbar-brand > img{
   padding:0em 8em 0em 0em;
-  margin:-4.4em 0em 1em 0em;
+  margin:-.1em 0em 1em 0em;
   position: relative;
-  z-index: 1000;
+  z-index: -1000;
 }
 
 .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
-  color: #333;
+  color: black;
 }
 
 /* top contact navbar*/
 .navbar {
   margin: -2em 0em 0em 0em;
-  padding:0em 0em 0em 0em;
-
-
+  padding:0em 3em 0em 5em;
 }
+
 
 .list-inline > li{
   padding:12px 91.5px 2px 40px;
@@ -78,27 +142,6 @@ body {
 }
 /*END top contact navbar*/
 
-/* main navbar */
-.navbar-nav > li{
-  padding:0em 0em 0em 0em;
-  margin: -.5em 2em 2em 0em;
-  text-align: center;
-  height: 7em;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  }
-
-.nav {
-  padding:0em 0em 0em 0em;
-  margin: -4em 0em 0em 2em;
-}
-
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -180,18 +223,21 @@ body {
     padding: 0em 2em 0em 0em;
   }
 
-    .container h2 {
-    width: 100%;
-    padding: 7em 2em 0em 0em;
+  .container h2 {
+  width: 100%;
+  padding: 7em 2em 0em 0em;
 }
 
 .carousel-control {
     width:5%;
-
 }
 
 .carousel-control.right {
-   margin-right:1.5em;
+   margin-right:2em;
+}
+
+.carousel-control.left {
+   margin-right:4em;
 }
 
 h2 {
@@ -201,11 +247,10 @@ h2 {
   padding: -3em 0em 3em 0em;
   margin:0em 0em 0em 3em;
   margin-bottom: 25px;
-
 }
 
 .fa-angle-left, .fa-angle-right{
-    padding:11em 0em 0em 0em;
+    padding:12em 0em 0em 0em;
 }
 
 #fa-angle-left, #fa-angle-right{
@@ -225,9 +270,11 @@ h2 {
     z-index:-100;
 }
 
+
+
 #contact_form {
-    width: 500px;
-    height: 355px;
+    width: 40%;
+    height: 40%;
     margin: 360px 100px 3px 450px;
     padding: 0px 100px 1px 3px;
     background-color: white;
@@ -243,16 +290,17 @@ h2 {
     z-index:100;
     padding: 0px 0px 0px 0px;
     margin: 180px 0px 1px 560px;
-    height:8%;
-    width:23%;
+    height:5%;
+    width:22%;
 }
 /*END contact form */
 .col-xs-4 {
-    position: absolute;
+    position: relative;
     z-index:100;
     margin: 360px 100px 1px 450px;
     padding: 0px 100px 3px 3px;
-
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -266,30 +314,40 @@ h2 {
     color: black;
     font-size: 16px;
     margin: .8em .5em .5em 8em;
+    width: 20%;
+    height: 40%;
 }
 
 
 .btn-secondary {
-  font-weight: 300;
+    font-weight: 300;
     font-size: 1.5em;
     margin: 0em .5em 0em 8em;
     padding: 0em 0em 0em 0em;
 }
 
+
+
+.row:before {
+    display: table;
+    content: " ";
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-
-
-
 @media (min-width: 768px) {
+
+    .navbar-nav {
+    float: left;
+    margin: 0px;
+}
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 15px;
-  }
+
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
@@ -301,6 +359,13 @@ h2 {
     border-radius: 4px;
   }
 
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
   .featurette-heading {
     font-size: 50px;
   }
@@ -308,6 +373,6 @@ h2 {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 80px;
+    margin-top: 120px;
   }
 }
