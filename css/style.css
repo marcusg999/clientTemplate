@@ -231,6 +231,11 @@ ul.dropdown-menu {
   margin: 3em 6em 0em 0em;
   padding: 1em 1em 0em 0em;
 }
+
+.list-inline .btn-link {
+    height: 2.4em;
+  border: .3px solid #808080;
+}
 /*
  a {
   text-align: right;
@@ -404,9 +409,9 @@ h2 {
 }
 
 #contact_background {
-    width: 45%;
-    margin: 0 auto;
-    padding: 5em 0em 1em 2em;
+    width: 50%;
+    margin: -5em auto;
+    padding: 6em 0em 1em 2em;
     background-color: white;
     position: absolute;
     opacity: 0.6;
@@ -419,18 +424,21 @@ h2 {
 /* Logo Img*/
 .contact_img img {
     position: absolute;
-    z-index:5000;
-    padding: 0em 10em 0em 0em;
-    margin: 0 auto;
-    width:50%
+    z-index:3000;
+    padding: 5em 10em 8em 6em;
+    margin: 0em auto;
+    width:100%;
+    height:100%;
+    text-align: center;
 }
 
 .contact-cityimg img{
    /* position: absolute;
     z-index:100;*/
-    padding: 0em 0em -5em 0em;
+    padding: 0em 0em -3em 0em;
     margin: 0 auto;
     width:100%;
+    height: 100%;
     position: relative;
 }
 /*END contact form */
